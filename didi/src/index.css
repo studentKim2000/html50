@@ -73,3 +73,10 @@ button:focus-visible {
   text-align: center;
   width: 100vw;
 }
+
+.components
+{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

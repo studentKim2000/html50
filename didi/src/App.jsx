@@ -1,30 +1,12 @@
-import {useState} from 'react';
-
+import DidTime from "./DidTime"
 function App() {
-  const [did_time, set_did_time] = useState("");
-
-  function getdate()
-  {
-    const date = new Date();    
-    return date.toLocaleDateString('ko-KR') + ' ' +  date.toLocaleTimeString('ko-KR');
-  }
-
-  function checkTime()
-  {
-    let current_time = getdate()
-    set_did_time(current_time)
-  }
 
   return (
     <>
-      <div className="center_div">
-        <div>
-          <button onClick={checkTime}>차잠궜나</button>
-        </div>
-        <div>
-          {did_time}
-        </div>
-      </div>
+      <div className='components'>
+        <DidTime title = "출/퇴근" />
+        <DidTime title = "차 잠궜나"/>
+      </div>          
     </>
   )
 }
