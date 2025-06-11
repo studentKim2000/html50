@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-function App() {
+function DidTime() {
   const [did_time, set_did_time] = useState("");
 
   function getdate()
@@ -19,7 +19,7 @@ function App() {
     <>
       <div className="center_div">
         <div>
-          <button onClick={checkTime}>차잠궜나</button>
+          <button onClick={checkTime}>출/퇴근</button>
         </div>
         <div>
           {did_time}
@@ -29,4 +29,4 @@ function App() {
   )
 }
 
-export default App
+export default DidTime
