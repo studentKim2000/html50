@@ -6,7 +6,8 @@ function App() {
   }
 
   return (
-    <>      
+    <>
+      <button>출/퇴근</button>
       {getdate()}
     </>
   )
