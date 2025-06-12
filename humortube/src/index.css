@@ -69,5 +69,10 @@ button:focus-visible {
 
 .center_div
 {
-  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100vw;
 }
